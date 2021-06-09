@@ -2,7 +2,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 import { Heroe } from '../interfaces/heroes.interface';
 
 @Pipe({
-  name: 'imagen'
+  name: 'imagen',
+  //pure: false // en false se recarga todo el tiempo, en true sólo cuando se actualiza el argumento
 })
 export class ImagenPipe implements PipeTransform {
 
