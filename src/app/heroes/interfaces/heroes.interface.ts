@@ -1,25 +1,14 @@
-export interface Heroes {
-    usuarios: Usuario[];
-    heroes:   Heroe[];
-}
-
 export interface Heroe {
     id?:              string;
     superhero:        string;
-    publisher?:        Publisher;
+    publisher:        Publisher;
     alter_ego:        string;
     first_appearance: string;
     characters:       string;
-    alt_img?:         string;
+    alt_img?:         string; // https://kasdfjaskdfajsdf.com/img.png
 }
 
 export enum Publisher {
     DCComics = "DC Comics",
     MarvelComics = "Marvel Comics",
-}
-
-export interface Usuario {
-    id:      number;
-    usuario: string;
-    email:   string;
 }
